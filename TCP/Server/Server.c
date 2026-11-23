@@ -6,11 +6,11 @@
     #include <sys/socket.h>
     #include <arpa/inet.h>
     #include <unistd.h>
-    #include <string.h>
 #endif
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define PROTOPORT 5376 
 #define QLEN 2
@@ -150,4 +150,5 @@ int main(int argc, char *argv[]) {
     closesocket(MySocket);
     ClearWinSock();
     return 0;
+
 }
